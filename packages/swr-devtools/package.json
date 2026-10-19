@@ -67,8 +67,7 @@
     "react": "^18.2.0",
     "swr": "^2.0.0",
     "typescript": "^4.8.3",
-    "vite": "^4.2.0",
-    "vitest": "^0.29.3"
+    "vitest": "^4.1.12"
   },
   "dependencies": {
     "superjson": "^1.11.0"
