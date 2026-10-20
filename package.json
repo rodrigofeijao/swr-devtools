@@ -38,7 +38,8 @@
   "pnpm": {
     "overrides": {
       "next>postcss": "^8.5.23",
-      "nx>undici": "^7.29.1"
+      "nx>undici": "^7.29.1",
+      "web-ext>@devicefarmer/adbkit": "-"
     }
   }
 }
