@@ -1,5 +1,5 @@
+import { SWRDevTools } from "@rodrigofeijao/swr-devtools";
 import { SWRConfig } from "swr";
-import { SWRDevTools } from "swr-devtools";
 import "../styles/globals.css";
 
 const fetcher = async (url) => {

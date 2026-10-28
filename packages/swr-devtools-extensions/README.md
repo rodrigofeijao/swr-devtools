@@ -8,4 +8,4 @@ SWR Devtools is a chrome/firefox extension for [SWR](https://swr.vercel.app/), w
     - https://addons.mozilla.org/en-US/firefox/addon/swr-devtools/
 ## LICENSE
 
-[MIT](LICENSE.md)
+[MIT](LICENSE)

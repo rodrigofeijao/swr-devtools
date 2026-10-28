@@ -1,4 +1,4 @@
-import { createSWRDevtools } from "swr-devtools/lib/createSWRDevTools";
+import { createSWRDevtools } from "@rodrigofeijao/swr-devtools/lib/createSWRDevTools";
 
 const [middleware] = createSWRDevtools();
 

@@ -1,7 +1,7 @@
+import type { DevToolsCacheData } from "@rodrigofeijao/swr-devtools/lib/swr-cache";
 import React, { useEffect, useState } from "react";
 import styled, { createGlobalStyle } from "styled-components";
 import type { Cache } from "swr";
-import type { DevToolsCacheData } from "swr-devtools/lib/swr-cache";
 import { useDevToolsCache } from "../devtools-cache";
 import { type EventEmitter, useRequests, useTracks } from "../request";
 import { CachePanel } from "./CachePanel";

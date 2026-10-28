@@ -1,6 +1,5 @@
+import type { DevToolsCacheData } from "@rodrigofeijao/swr-devtools/lib/swr-cache";
 import React, { useState } from "react";
-
-import type { DevToolsCacheData } from "swr-devtools/lib/swr-cache";
 import { CacheData } from "./CacheData";
 import { CacheKey } from "./CacheKey";
 import {

@@ -1,11 +1,10 @@
-import { useEffect, useState } from "react";
-import type { Cache } from "swr";
-
 import {
   convertToDevToolsCacheData,
   type DevToolsCacheData,
   injectSWRCache,
-} from "swr-devtools/lib/swr-cache";
+} from "@rodrigofeijao/swr-devtools/lib/swr-cache";
+import { useEffect, useState } from "react";
+import type { Cache } from "swr";
 import { formatDateTime } from "./format";
 
 type Subscribe = (fn: (key: string, value: any) => void) => () => void;

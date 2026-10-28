@@ -75,7 +75,7 @@ export default function Home() {
               dangerouslySetInnerHTML={{
                 __html: highlight(`
 import { createRoot } from "react-dom/client";
-import { SWRDevTools } from "swr-devtools";
+import { SWRDevTools } from "@rodrigofeijao/swr-devtools";
 
 createRoot(document.getElementById("app")).render(
   <SWRDevTools>

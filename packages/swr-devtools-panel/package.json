@@ -1,5 +1,5 @@
 {
-  "name": "swr-devtools-panel",
+  "name": "@rodrigofeijao/swr-devtools-panel",
   "version": "1.3.2",
   "description": "A React component for the SWR DevTools panel",
   "main": "cjs/index.js",
@@ -14,6 +14,9 @@
   },
   "types": "lib/index.d.ts",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "lib",
     "cjs"
@@ -55,6 +58,6 @@
   },
   "dependencies": {
     "react-json-tree": "^0.20.0",
-    "swr-devtools": "workspace:*"
+    "@rodrigofeijao/swr-devtools": "workspace:*"
   }
 }
