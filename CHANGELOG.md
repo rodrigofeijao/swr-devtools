@@ -3,6 +3,50 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/koba04/swr-devtools/compare/v1.3.2...v2.0.0) (2026-10-28)
+
+### chore
+
+* migrate from yarn v1 to pnpm and use corepack ([#129](https://github.com/koba04/swr-devtools/issues/129)) ([810b914](https://github.com/koba04/swr-devtools/commit/810b914a17f6578a6a34c0773c5ee6992b0b9142))
+
+### BREAKING CHANGES
+
+* Change build target from ES5 to ES2020 (technically, this isn't necessary, but for consistency)
+
+
+  * chore: migrate from yarn v1 to pnpm and use corepack
+
+  * chore: add dpes as workspace:*
+
+  * chore: enable corepack pnpm on CI
+
+  * fix: version number
+
+  * fix: corepack command
+
+  * pre-enable corepack
+
+  * fix: incorrect yaml format
+
+  * chore: update tsc target
+
+  * chore: update tsc lib
+
+  * fix: pass build scripts
+
+  * fix: add useWorkspaces option for lerna
+
+  * fix: update pnpm lock file
+
+  * update pnpm lock file for demo apps
+
+  * fix: lint errors
+
+  * fix: use config.cache and igoore a tserror temporarily
+
+  * refactor: use import type
+
+
 ## [1.3.2](https://github.com/koba04/swr-devtools/compare/v1.3.1...v1.3.2) (2023-09-10)
 
 
