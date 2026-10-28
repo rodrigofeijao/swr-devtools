@@ -18,7 +18,9 @@ class EventEmitter {
     };
   }
   emit(...args: any[]) {
-    this.listeners.forEach((fn) => fn(...args));
+    this.listeners.forEach((fn) => {
+      fn(...args);
+    });
   }
 }
 

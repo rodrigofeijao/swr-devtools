@@ -17,7 +17,9 @@ export class EventEmitter {
     };
   }
   emit(...args: any[]) {
-    this.listeners.forEach((fn) => fn(...args));
+    this.listeners.forEach((fn) => {
+      fn(...args);
+    });
   }
 }
 
@@ -169,6 +171,7 @@ export const createSWRDevtools = () => {
 
     // If DevToolsPanel is not opened, we don't do anything.
     if (!devToolsPanelIsOpen) {
+      // biome-ignore lint/correctness/useHookAtTopLevel: useSWRNext is called exactly once per render on either branch
       return useSWRNext(key, fn, config);
     }
 
@@ -260,6 +263,7 @@ export const createSWRDevtools = () => {
       return config.onDiscarded ? config.onDiscarded.apply(null, args) : null;
     };
 
+    // biome-ignore lint/correctness/useHookAtTopLevel: useSWRNext is called exactly once per render on either branch
     return useSWRNext(key, wrappedFn, {
       ...config,
       onDiscarded,

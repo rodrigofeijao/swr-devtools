@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "format": "biome format --write .",
-    "fix:biome": "biome check --apply-unsafe .",
+    "fix:biome": "biome check --write --unsafe .",
     "lint": "run-p lint:*",
     "lint:biome": "biome check .",
     "lint:tsc": "tsc --noEmit"

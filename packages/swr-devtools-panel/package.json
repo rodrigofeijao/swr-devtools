@@ -29,7 +29,7 @@
     "build:esm": "tsc",
     "build:cjs": "tsc -p tsconfig.cjs.json",
     "format": "biome format --write .",
-    "fix:biome": "biome check --apply-unsafe .",
+    "fix:biome": "biome check --write --unsafe .",
     "lint": "run-p lint:*",
     "lint:biome": "biome check .",
     "lint:tsc": "tsc --noEmit",
