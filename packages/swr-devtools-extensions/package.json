@@ -41,8 +41,8 @@
     "react-dom": "^19.3.1",
     "styled-components": "^6.6.0",
     "swr": "^2.0.0",
-    "swr-devtools": "workspace:*",
-    "swr-devtools-panel": "workspace:*",
+    "@rodrigofeijao/swr-devtools": "workspace:*",
+    "@rodrigofeijao/swr-devtools-panel": "workspace:*",
     "webextension-polyfill": "^0.12.0"
   }
 }

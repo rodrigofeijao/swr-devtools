@@ -1,7 +1,7 @@
+import type { DevToolsCacheData } from "@rodrigofeijao/swr-devtools/lib/swr-cache";
 import React from "react";
 import { JSONTree } from "react-json-tree";
 import styled from "styled-components";
-import type { DevToolsCacheData } from "swr-devtools/lib/swr-cache";
 import { CacheKey } from "./CacheKey";
 import { ErrorLabel } from "./StatusLabel";
 import { useTheme } from "./ThemeProvider";

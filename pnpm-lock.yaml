@@ -28,6 +28,12 @@ importers:
 
   examples/swr-devtools-demo:
     dependencies:
+      '@rodrigofeijao/swr-devtools':
+        specifier: workspace:*
+        version: link:../../packages/swr-devtools
+      '@rodrigofeijao/swr-devtools-panel':
+        specifier: workspace:*
+        version: link:../../packages/swr-devtools-panel
       '@vercel/analytics':
         specifier: ^2.0.1
         version: 2.0.1(next@16.4.3(@babel/core@7.29.7)(@types/node@26.6.5)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react@19.3.1)
@@ -49,12 +55,6 @@ importers:
       swr:
         specifier: ^2.0.0
         version: 2.5.1(react@19.3.1)
-      swr-devtools:
-        specifier: workspace:*
-        version: link:../../packages/swr-devtools
-      swr-devtools-panel:
-        specifier: workspace:*
-        version: link:../../packages/swr-devtools-panel
     devDependencies:
       '@types/node':
         specifier: ^26.6.5
@@ -68,6 +68,12 @@ importers:
 
   examples/swr-v1-devtools-demo:
     dependencies:
+      '@rodrigofeijao/swr-devtools':
+        specifier: workspace:*
+        version: link:../../packages/swr-devtools
+      '@rodrigofeijao/swr-devtools-panel':
+        specifier: workspace:*
+        version: link:../../packages/swr-devtools-panel
       next:
         specifier: ^16.4.3
         version: 16.4.3(@babel/core@7.29.7)(@types/node@26.6.5)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
@@ -86,12 +92,6 @@ importers:
       swr:
         specifier: ^1.3.0
         version: 1.3.0(react@19.3.1)
-      swr-devtools:
-        specifier: workspace:*
-        version: link:../../packages/swr-devtools
-      swr-devtools-panel:
-        specifier: workspace:*
-        version: link:../../packages/swr-devtools-panel
     devDependencies:
       '@types/node':
         specifier: ^26.6.5
@@ -105,6 +105,12 @@ importers:
 
   examples/swr-v1-legacy-devtools-demo:
     dependencies:
+      '@rodrigofeijao/swr-devtools':
+        specifier: workspace:*
+        version: link:../../packages/swr-devtools
+      '@rodrigofeijao/swr-devtools-panel':
+        specifier: workspace:*
+        version: link:../../packages/swr-devtools-panel
       next:
         specifier: ^16.4.3
         version: 16.4.3(@babel/core@7.29.7)(@types/node@26.6.5)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
@@ -123,12 +129,6 @@ importers:
       swr:
         specifier: 1.1.x
         version: 1.1.2(react@19.3.1)
-      swr-devtools:
-        specifier: workspace:*
-        version: link:../../packages/swr-devtools
-      swr-devtools-panel:
-        specifier: workspace:*
-        version: link:../../packages/swr-devtools-panel
     devDependencies:
       '@types/node':
         specifier: ^26.6.5
@@ -176,6 +176,12 @@ importers:
 
   packages/swr-devtools-extensions:
     dependencies:
+      '@rodrigofeijao/swr-devtools':
+        specifier: workspace:*
+        version: link:../swr-devtools
+      '@rodrigofeijao/swr-devtools-panel':
+        specifier: workspace:*
+        version: link:../swr-devtools-panel
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -188,12 +194,6 @@ importers:
       swr:
         specifier: ^2.0.0
         version: 2.5.1(react@19.3.1)
-      swr-devtools:
-        specifier: workspace:*
-        version: link:../swr-devtools
-      swr-devtools-panel:
-        specifier: workspace:*
-        version: link:../swr-devtools-panel
       webextension-polyfill:
         specifier: ^0.12.0
         version: 0.12.0
@@ -231,12 +231,12 @@ importers:
 
   packages/swr-devtools-panel:
     dependencies:
+      '@rodrigofeijao/swr-devtools':
+        specifier: workspace:*
+        version: link:../swr-devtools
       react-json-tree:
         specifier: ^0.20.0
         version: 0.20.0(@types/react@19.3.0)(react@19.3.1)
-      swr-devtools:
-        specifier: workspace:*
-        version: link:../swr-devtools
     devDependencies:
       '@testing-library/dom':
         specifier: ^10.4.2

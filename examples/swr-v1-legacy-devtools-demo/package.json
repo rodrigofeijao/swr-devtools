@@ -19,8 +19,8 @@
     "styled-components": "^6.6.0",
     "sugar-high": "^2.6.4",
     "swr": "1.1.x",
-    "swr-devtools": "workspace:*",
-    "swr-devtools-panel": "workspace:*"
+    "@rodrigofeijao/swr-devtools": "workspace:*",
+    "@rodrigofeijao/swr-devtools-panel": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^26.6.5",

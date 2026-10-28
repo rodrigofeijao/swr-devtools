@@ -1,7 +1,6 @@
+import type { DevToolsCacheData } from "@rodrigofeijao/swr-devtools/lib/swr-cache";
 import React from "react";
 import styled from "styled-components";
-
-import type { DevToolsCacheData } from "swr-devtools/lib/swr-cache";
 import {
   ErrorLabel,
   InfiniteLabel,

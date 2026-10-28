@@ -1,4 +1,4 @@
-import type { DevToolsMessage } from "swr-devtools";
+import type { DevToolsMessage } from "@rodrigofeijao/swr-devtools";
 import { type Runtime, runtime } from "webextension-polyfill";
 
 const injectDevToolsHook = () => {
