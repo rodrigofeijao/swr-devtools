@@ -1,9 +1,8 @@
 // We cannot import React nad use hooks that SWR provides because this runs on the application side,
 // we have to use the same React instance with the application
 import type { Cache, Middleware } from "swr";
-
-import { injectSWRCache, serializePayload } from "./swr-cache";
 import { serialize as unstable_serialize } from "./swr/serialize";
+import { injectSWRCache, serializePayload } from "./swr-cache";
 
 type EventListener = (...args: any[]) => void;
 

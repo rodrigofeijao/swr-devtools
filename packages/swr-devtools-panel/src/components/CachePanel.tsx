@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { DevToolsCacheData } from "swr-devtools/lib/swr-cache";
+import type { DevToolsCacheData } from "swr-devtools/lib/swr-cache";
 import { CacheData } from "./CacheData";
 import { CacheKey } from "./CacheKey";
 import {

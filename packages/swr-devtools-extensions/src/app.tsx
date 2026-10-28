@@ -2,7 +2,7 @@ import type { ReactElement } from "react";
 import { createRoot } from "react-dom/client";
 import { deserializePayload } from "swr-devtools";
 import { SWRDevToolPanel } from "swr-devtools-panel";
-import { Runtime, devtools, runtime } from "webextension-polyfill";
+import { devtools, type Runtime, runtime } from "webextension-polyfill";
 
 import type { ContentMessage } from "./content";
 

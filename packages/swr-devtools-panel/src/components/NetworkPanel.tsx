@@ -1,7 +1,7 @@
-import React, { MouseEvent, useCallback, useRef, useState } from "react";
+import React, { type MouseEvent, useCallback, useRef, useState } from "react";
 import styled from "styled-components";
 import { formatDateTime } from "../format";
-import { RequestsById } from "../request";
+import type { RequestsById } from "../request";
 import { CacheData } from "./CacheData";
 
 import { Timeline } from "./timeline";

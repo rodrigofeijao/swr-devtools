@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
-import { Theme } from "./SWRDevToolPanel";
+import type { Theme } from "./SWRDevToolPanel";
 
 const THEME_KEY = "$swr-devtools:theme";
 
