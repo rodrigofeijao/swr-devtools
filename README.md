@@ -1,5 +1,8 @@
 # swr-devtools
 
+> [!NOTE]
+> This is a fork of [koba04/swr-devtools](https://github.com/koba04/swr-devtools), which hasn't been updated since November 2023. It only exists to keep the dependencies up to date and make sure no known vulnerabilities ship with the packages. They're published to npm as `@rodrigofeijao/swr-devtools` and `@rodrigofeijao/swr-devtools-panel`.
+
 A DevTools for SWR
 
 [![](https://github.com/koba04/swr-devtools/workflows/lint/badge.svg)](https://github.com/koba04/swr-devtools/actions?workflow=lint)
