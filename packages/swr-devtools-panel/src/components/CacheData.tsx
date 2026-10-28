@@ -19,13 +19,13 @@ export const CacheData = React.memo(({ cacheData }: Props) => (
     </Title>
     <DataWrapper>
       <>
-        {cacheData.data && (
+        {!!cacheData.data && (
           <>
             <DataTitle>Data</DataTitle>
             <CacheDataView data={cacheData.data as any} />
           </>
         )}
-        {cacheData.error && (
+        {!!cacheData.error && (
           <>
             <DataTitle>
               <ErrorLabel>Error</ErrorLabel>
@@ -50,7 +50,7 @@ const CacheDataView = ({ data }: { data: any }) => {
       theme="railscasts"
       invertTheme={theme !== "dark"}
       hideRoot
-      shouldExpandNode={(_keyPath, _data, level) => level < 3}
+      shouldExpandNodeInitially={(_keyPath, _data, level) => level < 3}
     />
   );
 };

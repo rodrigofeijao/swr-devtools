@@ -25,7 +25,7 @@ export const CacheKey = ({ cacheData }: { cacheData: DevToolsCacheData }) => {
         <>
           {cacheData.isSubscription && <SubscriptionLabel />}
           {cacheData.isInfinite && <InfiniteLabel />}
-          {cacheData.error && <ErrorLabel />}
+          {!!cacheData.error && <ErrorLabel />}
           {cacheData.isLoading && <LoadingLabel />}
           {cacheData.isValidating && <ValidationgLabel />}
         </>

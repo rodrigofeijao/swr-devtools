@@ -35,7 +35,7 @@ export const useThemePreference = (): [Theme, typeof setTheme] => {
   return [theme, setTheme];
 };
 
-export const useTheme = (): Omit<Theme, "system"> => {
+export const useTheme = (): Exclude<Theme, "system"> => {
   const [theme] = useThemePreference();
   return theme === "system" ? getThemeByPreference() : theme;
 };

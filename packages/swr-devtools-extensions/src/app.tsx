@@ -38,7 +38,8 @@ render(<SWRDevToolPanel cache={null} events={null} key="swr-not-found" />);
 let mounted = false;
 port.onMessage.addListener(
   // sender is undefined
-  (message: ContentMessage, { sender }: Runtime.Port) => {
+  (rawMessage: unknown, { sender }: Runtime.Port) => {
+    const message = rawMessage as ContentMessage;
     const tabId = message.tabId; // sender?.tab?.id;
     const cache = cacheMap.get(tabId) || new Map();
     /*

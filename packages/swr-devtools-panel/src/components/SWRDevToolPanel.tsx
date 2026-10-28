@@ -37,7 +37,9 @@ type Props = {
   isFixedPosition?: boolean;
 };
 
-const GlobalStyleSheet = createGlobalStyle<{ theme: Theme }>`${({ theme }) => `
+const GlobalStyleSheet = createGlobalStyle<{ $theme: Theme }>`${({
+  $theme: theme,
+}) => `
   html {
     --swr-devtools-text-color: ${theme === "dark" ? "#FFF" : "#000"};
     --swr-devtools-bg-color: ${theme === "dark" ? "#292a2d" : "#FFF"};
@@ -73,7 +75,7 @@ const GlobalStyleSheet = createGlobalStyle<{ theme: Theme }>`${({ theme }) => `
 
 const GlobalStyle = () => {
   const theme = useTheme();
-  return <GlobalStyleSheet theme={theme} />;
+  return <GlobalStyleSheet $theme={theme} />;
 };
 
 export const SWRDevToolPanel = ({ cache, events }: Props) => {

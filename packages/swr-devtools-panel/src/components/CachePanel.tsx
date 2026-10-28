@@ -39,7 +39,7 @@ export const CachePanel = ({
             .map((cacheItem) => (
               <CacheItem
                 key={cacheItem.key}
-                isSelected={selectedItem?.key === cacheItem.key}
+                $isSelected={selectedItem?.key === cacheItem.key}
               >
                 <CacheItemButton onClick={() => onSelectItem(cacheItem)}>
                   <CacheKey cacheData={cacheItem} />
